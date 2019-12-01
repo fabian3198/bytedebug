@@ -3,6 +3,7 @@ html{
 	height: 100%;
 	width: 100%;
 	background-color: #000051;
+	color:white;
 }
 ul, ol{
 	list-style: none;
@@ -24,20 +25,6 @@ header{
 	box-sizing: border-box;
 	background-color: #000a12;
 	border-bottom: 4px solid #e3f2fd;
-}
-a:link{
-	text-decoration: none;
-	color: white;
-	font-size: 1.4vw;
-}
-a:visited{
-	text-decoration: none;
-	color: white;
-	font-size: 1.4vw;
-}
-a:hover{
-	transform: scale(1.1,1.1);
-	background-color: none;
 }
 #logo{
 	width: 35%;
@@ -81,53 +68,52 @@ nav ul{
 	font-family: centaur normal;
 	font-size: 1.4vw;
 }
+a:link{
+	text-decoration: none;
+	color: white;
+	font-size: 1.4vw;
+}
+a:visited{
+	text-decoration: none;
+	color: white;
+	font-size: 1.4vw;
+}
+a:hover{
+	transform: scale(1.1,1.1);
+	background-color: none;
+}
 section{
 	height: 76%;
 	width: 100%;
 	display: block;
 }
-#texto{
-	height: 100%;
-	width: 60%;
+.texto{
+	width: 100%;
 	display: block;
 	float: left;
 	box-sizing: border-box;
-	padding: 5% 0% 5% 10%;
-}
-h3{
-	text-align: left;
-	font-size: 1.8vw;
-	margin: 0;
-}
-h2{
-	text-align: center;
-	font-size: 2.3vw;
-}
-h1{
-	text-align: center;
-	font-size: 2.3vw;
+	padding: 3% 5%;
 }
 p{
 	text-align: justify;
 	font-size: 1.3vw;
-	margin: 0;
+	margin-top: 2%;
 	box-sizing: border-box;
 	color:white;
 }
-#imgcnt{
-	height: 100%;
-	width: 40%;
+.texto ul{
+	margin: 4% 2%;
 	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	float: right;
 }
-#img1{
-	box-sizing: border-box;
-	padding: 6%;
-	width: 80%;
+.texto ul li{
+	font-size: 1.2vw;
+	margin: 1%;
 }
+.titulo{
+	text-align:center;
+	font-size:1.3vw;
+}
+
 footer{
 	height: 12%;
 	width:100%;
@@ -139,16 +125,13 @@ footer{
 	justify-content: center;
 }
 				/* !!!CONTACTO!!! */
-.texto{
-	padding: 3% 6%;
-}
-.texto p{
-	margin-top: 2%;
-}
+
 #ulc{
 	width: 100%;
-	padding-left: 10%;
-	box-sizing: border-box;
+	padding: 3% 8%;
+	box-sizing:border-box;
+	margin: 0;
+	display:block;
 }
 #ulc a:link{
 	font-size: 1.2vw;
@@ -168,7 +151,7 @@ i{
 	display: inline-block;
 	margin-right: 4%;
 }
-				/* !!!GALERIA!!! */
+				/* !!!SLIDE!!! */
 .slideshow{
 	width: 100%;
 	position: relative;
@@ -195,14 +178,20 @@ i{
 	height: 100%;
 	top: 0;
 	left: 0;
-	padding-bottom: 15%;
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 	color: #fff;
+}
+.caption p{
+	width: 100%;
+	height:7%;
+	font-size:2.8vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top:28%;
+	margin:0;
+	padding:0;
 }
 .pagination{
 	position: absolute;
@@ -238,20 +227,7 @@ i{
 	right: 10px;
 }
 				/* MEDIA QUERTYES */
-@media (max-width: 800px) and  (orientation: landscape){
-	#texto{
-		padding: 5% 0% 5% 8%;
-	}
-	p{
-		font-size: 1.8vw;
-	}
-	a:link{
-		font-size: 1.8vw;
-	}
-	a:visited{
-		font-size: 1.8vw;
-	}
-}
+
 @media (orientation: portrait){
 	header{
 		height: 10%;
@@ -298,20 +274,10 @@ i{
 		align-items: center;
 		justify-content: center;
 	}
-	#texto{
-		height: 40%;
+	.texto{
 		width: 100%;
 		padding: 5%;
-		display: block;
-	}
-	h3{
-		font-size: 3.5vw;
-	}
-	h2{
-		font-size: 3.8vw;
-	}
-	h1{
-		font-size: 3.8vw;
+		box-sizing: boder-box;
 	}
 	p{
 		font-size: 2.8vw;
@@ -326,33 +292,43 @@ i{
 		color: white;
 		font-size: 2.9vw;
 	}
-	#imgcnt{
-		height: 60%;
-		width: 100%;
-		float: none;
+	a:hover{
+		transform: none;
+		background-color: none;
 	}
-	#img1{
-		width: 55%;
-		padding:0; 
+	.texto ul{
+		margin: 10% 0;
+	}
+	.texto ul li{
+		font-size: 2.8vw;
+		margin:4%;
+	}
+	.titulo{
+		font-size:2.8vw;
+	}
+	#ulc a:link{
+		font-size: 2.8vw;
+	}
+	#ulc a:visited{
+		font-size: 2.8vw;
+	}
+	.contacto{
+		margin: 0 0 8% 0;
+		font-size: 2.8vw;
 	}
 	i{
 		font-size: 4vw;
 	}
-	.contacto{
-		margin: 0 0 8% 0;
-	}
-	#pcontacto{
-		padding: 10%;
-	}
-	#galeria{
-		display: flex;
-		align-items: center;
+	#presentacion{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	}
 	.slideshow{
 		height: 50%;
 	}
-	.slider .caption p{
-		padding: 5% 12%;
+	.caption p{
+		font-size:3.8vw;
 	}
 	.pagination li{
 		font-size: 2.5vw;
@@ -361,20 +337,42 @@ i{
 		font-size: 5vw;
 	}
 }
-@media (max-width: 600px) and  (orientation: portrait){
+@media (max-width: 400px) and  (orientation: portrait){
 	#logo{
 		font-size: 3.5vw;
 			}
 	.boton{
 		font-size: 3.7vw;
 	}
-	h3{
-		font-size: 3.8vw;
-	}
-	h2{
-		font-size: 4.2vw;
-	}
 	p{
 		font-size: 3.7vw;
+	}
+	a:link{
+		text-decoration: none;
+		color: white;
+		font-size: 3.7vw;
+	}
+	a:visited{
+		text-decoration: none;
+		color: white;
+		font-size: 3.7vw;
+	}
+	.texto ul li{
+		font-size: 3.7vw;
+	}
+	.titulo{
+		font-size:3.7vw;
+	}
+	#ulc a:link{
+		font-size: 3.7vw;
+	}
+	#ulc a:visited{
+		font-size: 3.7vw;
+	}
+	.contacto{
+		font-size: 3.7vw;
+	}
+	.pagination li{
+		font-size:3.5vw;
 	}
 }
